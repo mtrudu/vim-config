@@ -42,6 +42,11 @@ ln -s $HOME/.vim-config/.vimrc $HOME/.vimrc
 git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 git clone https://github.com/kien/ctrlp.vim.git $HOME/.vim/bundle/ctrlp.vim
 
+pkgs='ack-grep'
+if ! dpkg -s $pkgs >/dev/null 2>&1; then
+  sudo apt-get install $pkgs
+fi
+
 vim +BundleInstall +qa
 
 echo "\n\n \033[0;32m....D O N E....!\033[0m"

@@ -9,3 +9,7 @@ Plugin 'stanangeloff/php.vim'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'bling/vim-airline'
 
+if executable('ack') || executable('ack-grep')
+    Bundle 'mileszs/ack.vim'
+endif
+
