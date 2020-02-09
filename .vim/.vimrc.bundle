@@ -1,0 +1,11 @@
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'preservim/nerdtree'
+Plugin 'stanangeloff/php.vim'
+
+" theme
+Plugin 'tpope/vim-vividchalk'
+Plugin 'bling/vim-airline'
+
